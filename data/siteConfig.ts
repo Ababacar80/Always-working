@@ -5,7 +5,7 @@ export const siteConfig = {
 
   whatsapp: "+221711204949",
   get whatsappUrl() {
-    return `https://wa.me/${this.whatsapp}`
+    return `https://wa.me/${this.whatsapp.replace(/\D/g, "")}`
   },
 
   contact: {
